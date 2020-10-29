@@ -143,7 +143,7 @@ df['Total tax'] = (df['t21'] + df['VAT'] + df['havarot_tariffs_knia_delek_maasik
 median = weighted_median(df['Total tax'], df['weight'])
 #Calculating the median of the total tax payed.
 
-hotzaa_pct = median/np.sum(df['Total tax']*df['weight']) * 100
+hotzaa_pct = median/np.sum(df['Total tax']*df['weight'])
 #Calculating the ratio between the median total tax payed and the total taxed payed by the households in Israel.
 
 print(hotzaa_pct)
