@@ -103,11 +103,11 @@ Source:
 https://www.btl.gov.il/Insurance/HozrimBituah/Hozrim/%D7%A9%D7%99%D7%A0%D7%95%D7%99%20%D7%91%D7%AA%D7%A9%D7%9C%D7%95%D7%9D%20%D7%93%D7%9E%D7%99%20%D7%91%D7%99%D7%98%D7%95%D7%97%20%D7%9C%D7%90%D7%95%D7%9E%D7%99%20%D7%95%D7%93%D7%9E%D7%99%20%D7%91%D7%99%D7%98%D7%95%D7%97%20%D7%91%D7%A8%D7%99%D7%90%D7%95%D7%AA%20%D7%9C%D7%A9%D7%A0%D7%AA%202018.pdf
 """
 
-df = pd.read_csv(r'C:\Backup\I & E Surveys\2018\CSV\MB_2018.csv')
+df = pd.read_csv(r'')
 df.set_index('misparmb', inplace = True)
 #Importing the household data.
 
-df_prat = pd.read_csv(r'C:\Backup\I & E Surveys\2018\CSV\Prat_2018.csv')
+df_prat = pd.read_csv(r'')
 df_prat['maasik'] = df_prat['i111prat'].apply(compute_tax, args = (levels_maasik, pct_maasik), zichuy = 0, max_salary = 43370, max_tax = 3012)
 #Importing the persons data and calculating the employer's share of National Security Tax and Health Tax.
 
